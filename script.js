@@ -316,7 +316,7 @@ function runPick(startCol) {
     const endLabel = entryText(state.bottomEntries, endCol, defaultBottomEntry);
     const fixedText =
       startNum === 1
-        ? " (주작 성공: 1번은 항상 1번)"
+        ? " (1번은 항상 1번으로 연결됩니다)"
         : "";
     resultEl.innerHTML = `<strong>${startNum}번</strong> (${escapeHtml(startLabel)}) → <strong>${endNum}번</strong> (${escapeHtml(endLabel)})${fixedText}`;
   });
