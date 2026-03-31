@@ -166,8 +166,8 @@ function drawBase() {
 
   for (let c = 0; c < state.count; c += 1) {
     ctx.beginPath();
-    ctx.lineWidth = c === 0 ? 5 : 4;
-    ctx.strokeStyle = c === 0 ? "#b63d2e" : "#4f4639";
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = "#1f1b16";
     const x = laneX(c, state.count);
     ctx.moveTo(x, gridTop);
     ctx.lineTo(x, gridBottom);
@@ -183,7 +183,7 @@ function drawBase() {
       const x2 = laneX(i + 1, state.count);
       ctx.beginPath();
       ctx.lineWidth = 4;
-      ctx.strokeStyle = i === 0 ? "#d35b4e" : "#8e7750";
+      ctx.strokeStyle = "#1f1b16";
       ctx.moveTo(x1, y);
       ctx.lineTo(x2, y);
       ctx.stroke();
