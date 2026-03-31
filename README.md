@@ -8,7 +8,7 @@
 
 ## GitHub Pages 배포
 
-이 프로젝트는 빌드 단계가 없어서 저장소 루트를 그대로 GitHub Pages에 배포하면 됩니다.
+이 프로젝트는 GitHub Actions workflow로 자동 배포됩니다.
 
 ### 1. GitHub 저장소 생성
 
@@ -32,8 +32,7 @@ GitHub 저장소에서 아래 순서로 설정합니다.
 
 1. `Settings`
 2. `Pages`
-3. `Build and deployment` 항목에서 `Source`를 `Deploy from a branch`로 선택
-4. Branch를 `main`, Folder를 `/ (root)`로 선택
+3. `Build and deployment` 항목에서 `Source`를 `GitHub Actions`로 선택
 5. `Save`
 
 배포 주소 예시:
